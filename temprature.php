@@ -4,19 +4,21 @@
 
 <?php
 
-echo "temprature";
+echo "Temprature conversion app";
 
 ?>
 
 <br/>
-enter temp : <input type="text" id="temp" />
+<label>Enter temperature units:</label>
+<input type="text" id="temp" required="required">
 
 <br/>
 <!--Covert to: <input type="text" id="degree" /> -->
+<label>Convert to:</label> 
 <select id="degree" >
-<option value="F"> Convert to celci </option>
-<option value="C"> Convert to Fahar </option>
+<option value="F"> Celsius </option>
+<option value="C"> Fahrenheit </option>
 </select>
 <br/>
-<button id="button" > Calculate </button>
+<button id="button2" > Calculate </button>
 

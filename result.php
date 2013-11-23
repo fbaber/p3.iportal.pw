@@ -20,7 +20,7 @@ if($_POST){
 	// echo $currency1.'---'.$currency2.'--'.$value;
 	
 	
-	echo "<h1> currency loaded </h1>";
+	echo "<h1> Currency loaded </h1>";
 
 // Create an object to convert Australian Dollars to Euros.
     require 'fx.php';
@@ -34,8 +34,8 @@ if($_POST){
 
     $auPrice = $value;
 
-    echo '<p>Your price is AU$'. fmtMoney($auPrice)
-        .' which is approximately &euro;'. fmtMoney($fx->toForeign($auPrice)) .'</p>';
+    echo '<p>'.fmtMoney($auPrice).' '.$currency1.' is approximately '. fmtMoney($fx->toForeign($auPrice))
+        .' in '. $currency2.' Currency'.'</p>';
 }
 
 echo '<br/>';

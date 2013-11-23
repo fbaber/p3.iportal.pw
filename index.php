@@ -44,6 +44,9 @@
             <li>
 				<span class="aclass" id="weight" >Weight</span>
 			</li>
+			<li>
+				<span class="aclass" id="speed" >Speed</span>
+			</li>
         </ul>
     </nav>
   </header>

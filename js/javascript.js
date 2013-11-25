@@ -14,7 +14,7 @@ $(function(){
 		$.ajax({
 			//type: "POST",
 			url: page/*,
-			data: { name: "John", location: "Boston" }*/
+			data: { name: "FB", location: "NYC" }*/
 			})
 			.done(function( msg ) {
 			//$(".content").html('');
@@ -33,7 +33,7 @@ $(function(){
 		if($.isNumeric(value) &&  (value > 0) && ('null' != value))
 		{
 			// entered_values = 'Entered Value :'+val;
-			alert(value);
+			alert("You entered " + value + " " + currency1 + " for conversion into " + currency2);
 			var page = 'result.php';
 			$.ajax({
 			type: "POST",
@@ -45,7 +45,7 @@ $(function(){
 			});
 		}
 		else{
-		alert("Not Numeric value");
+		alert("Please enter a valid numeric value for currency conversion!");
 		//die();
 		}
 		/*
@@ -89,16 +89,24 @@ $(function(){
 		var temp = $("#temp").val();
 		
 		var To_temp = $("#degree").val();
-		alert(temp + To_temp);
-		
-		if(To_temp=='F'){
-			//alert("Temp in Celsius"+temp);
-			$(".content").html("<h1>Temp in Celsius: "+((temp-32)*5/9)+"</h1>");
-			
+		//alert("You entered " + temp + " degree Fahrenheit");
+		if($.isNumeric(temp) &&  ('null' != temp))
+		{
+			if(To_temp=='F'){
+				//alert("Temp in Celsius"+temp);
+				alert("You entered " + temp + " degree Fahrenheit.");
+				$(".content").html("<h1>Temp in Celsius: "+((temp-32)*5/9).toFixed(2)+"</h1>");
+				
+			}
+			else
+			{
+				alert("You entered " + temp + " degree Celsius.");
+				$(".content").html("<h1>Temp in Fahrenheit: "+(((temp*9)/5)+32).toFixed(2)+"</h1>");
+			}
 		}
 		else
 		{
-			$(".content").html("<h1>Temp in Fahrenheit: "+(((temp*9)/5)+32)+"</h1>");
+			alert("Please enter a valid numeric value for temperature conversion!");
 		}
 		});
 		/*

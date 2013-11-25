@@ -29,17 +29,21 @@ if($_POST){
 // This function formats a value with 2 decimal places.
     function fmtMoney($amount)
     {
-        return sprintf('.%.2f', $amount);
+        return sprintf('%.2f', $amount);
     }
 
     $auPrice = $value;
-
-    echo '<p>'.fmtMoney($auPrice).' '.$currency1.' is approximately '. fmtMoney($fx->toForeign($auPrice))
-        .' in '. $currency2.' Currency'.'</p>';
+	//echo '<p>'.fmtMoney($auPrice).' '.$currency1.' is approximately '. fmtMoney($fx->toForeign($auPrice))
+    //    .' in '. $currency2.' Currency'.'</p>';
+	echo '<br/>';
+	echo '<p>'.'<b>'.fmtMoney($auPrice).'</b>'.' '.$currency1.' is approximately '.'<b>'. fmtMoney($fx->toForeign($auPrice))
+    .'</b>'.' in '. $currency2.' Currency'.'</p>';
+	echo '<br/>';
+	echo '<p3>'.'*Note:The Exchange rates are delayed by 20 mins when markets are open.'.'</p3>';
+	
 }
 
-echo '<br/>';
-echo 'form submitted';
+
 
 
 ?>

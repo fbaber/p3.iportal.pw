@@ -20,7 +20,11 @@
     <br><br>
 	
 	<button id="button" > Convert Currency </button> -->
-	
+	<div class="payload">
+	<h3>Easy currency converter for major currencies</h3>
+	<br>
+	Currency Value:
+    <input type='text' id='Value' required="required">
 	Convert from: 
 	<select id="Currency1" autofocus>
 	<option value="USD">USD</option>
@@ -33,9 +37,6 @@
 	<option value="SEK">SEK</option>
 	</select>
 	<br><br>
-	
-	Currency Value:<br>
-    <input type='text' id='Value' required="required">
 	
 	<br><br>
 	Convert to:
@@ -50,6 +51,7 @@
 	<option value="USD">USD</option>
 	</select>
 	<button id="button" > Calculate </button>
+	</div>
 <!--</form> -->
 
 

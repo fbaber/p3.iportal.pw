@@ -28,11 +28,11 @@
   	<div class="headerTop">
         <h1>Easy To Use Converters</h1>
         <ul class="socialIcons">
-            <li><a href="www.facebook.com"><img src="images/facebookIcon.png" alt="" width="26" height="26"></a></li>
-            <li><a href="www.google.com"><img src="images/googleIcon.png" alt="" width="26" height="26"></a></li>
+            <li><a href="https://www.facebook.com"><img src="images/facebookIcon.png" alt="" width="26" height="26"></a></li>
+            <li><a href="https://www.google.com"><img src="images/googleIcon.png" alt="" width="26" height="26"></a></li>
         </ul>
     </div>
-    <div class="headerPic"><img src="images/headerPic.jpg" alt="" width="960" height="360"></div>
+    <div class="headerPic"><img src="images/headerPic.jpg" alt="money matters" width="960" height="360"></div>
     <nav>
         <ul id="navlist">
             <li id="active">
@@ -94,7 +94,7 @@ Your task is to build a simple tool, game, or widget— any utility that reacts 
             <li>Your project should be fully version controlled.</li>
             <li>Your project does not have to use a PHP framework, but you are welcome to use one if you'd like / your project calls for it.</li>
         </ul>
-        <div class="contentPic"><img src="images/money.jpg" alt="" width="535" height="337"></div>
+        <div class="contentPic"><img src="images/money.jpg" alt="" style="max-width:90%";></div>
         <p>
         	A message here. If needed. 
         </p>

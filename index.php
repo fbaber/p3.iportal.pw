@@ -95,7 +95,7 @@ Your task is to build a simple tool, game, or widget— any utility that reacts 
             <li>Your project should be fully version controlled.</li>
             <li>Your project does not have to use a PHP framework, but you are welcome to use one if you'd like / your project calls for it.</li>
         </ul>
-        <div class="contentPic"><img src="images/money.jpg" alt="" style="max-width:90%";></div>
+        <div class="contentPic"><img src="images/money.jpg" alt="money picture" style="max-width:90%"></div>
         <p>
         	A message here. If needed. 
         </p>

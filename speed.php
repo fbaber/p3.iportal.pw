@@ -3,26 +3,25 @@
 
 <?php
 
-echo "<h3> Speed Conversions</h3>";
+echo "<h2> Speed Conversions</h2>";
 
 ?>
 
 <br/>
-<label>Enter speed in Miles:</label>
-<input type="text" id="Miles" required="required">
-
 <br/>
 <!--Covert to: <input type="text" id="degree" /> -->
-<label>Converted into:</label> 
+<p3><b>Enter speed units for conversion in any of the below input boxes.</b></p3> 
 
-<div class="wform" style="font-size:19px; color:#C60; text-align:center;">
-<input id="kph" class="wform" type="text" onkeyup="checkDec(document.getElementById('decimal').value)" style=" border:2px dashed #C60; margin: 20px 20px 20px 20px; height:36px; width: 90%; position:relative; left:-20px; background-color:transparent; color:#C60; text-align:center; font-size:30px;">
+<div class="wform" style="font-size:19px; color:#339933; text-align:center;">
+<input type="text" id="Miles" class="inputbox">
+<label>Miles Per Hour</label>
+<input id="kph" class="inputbox" type="text">
 Kilo Meter Per Hour
 <br>
-<input id="knots" class="wform" type="text" onkeyup="checkBin(document.getElementById('binary').value)" style=" border:2px dashed #C60; margin: 20px 20px 20px 20px; height:36px; width: 90%; position:relative; left:-20px; background-color:transparent; color:#C60; text-align:center; font-size:30px;">
+<input id="knots" class="inputbox" type="text">
 Nautical Miles per hour
 <br>
-<input id="meters_second" class="wform" type="text" onkeyup="checkHex(document.getElementById('hexa').value)" style=" border:2px dashed #C60; margin: 20px 20px 20px 20px; height:36px; width: 90%; position:relative; left:-20px; background-color:transparent; color:#C60; text-align:center; font-size:30px;">
+<input id="meters_second" class="inputbox" type="text">
 Meters per second
 <br>
 <br>

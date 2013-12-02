@@ -117,7 +117,7 @@ $(function(){
 		function (){
 		var weight_unit = $("#weight_unit").val();
 		
-		alert(weight_unit);
+		// alert(weight_unit);
 		
 		$('#grams').val((weight_unit/0.0022046).toFixed(2));
 		
@@ -132,101 +132,67 @@ $(function(){
 			  
 			  var speed_in_miles = $("#Miles").val();
 			 // alert("Hello");
+		if($.isNumeric(speed_in_miles)){
 		$('#kph').val(speed_in_miles*1.61);
 		
 		$('#knots').val(speed_in_miles/1.15);
 		
-		$('#meters_second').val(speed_in_miles*0.44704);			  
+		$('#meters_second').val(speed_in_miles*0.44704);
+			}
+			else
+			{
+			alert("Please enter a valid numeric value for speed conversion!");
+			}
 		});
 		
 		$("#kph").keyup(function() {
 			  //xTriggered++;
 			  
 		var speed_in_kph = $("#kph").val();
-			 // alert("Hello");
+		if($.isNumeric(speed_in_kph)){
 		$('#Miles').val(speed_in_kph/1.61);
 		
 		$('#knots').val(speed_in_kph/3);
 		
-		$('#meters_second').val(speed_in_kph*0.54704);			  
+		$('#meters_second').val(speed_in_kph*0.54704);
+			}
+			else
+			{
+			alert("Please enter a valid numeric value for speed conversion!");
+			}
 		});
-		//validation code goes here.
-		//example code
-		/*
-		var entered_values ='';
-		var val = $("#input1").val();
-		var val1 = $("#currency").val();
 		
-		var check = 1;
+		// For Knots conversions 
+		$("#knots").keyup(function() {
+			  
+		var speed_in_knots = $("#knots").val();
+		if($.isNumeric(speed_in_knots)){
+		$('#Miles').val(speed_in_knots*1.151);
 		
-		if($.isNumeric(val) &&  val > 0)
-		{
-			entered_values = 'Entered Value :'+val;
-			//alert('Entered Value : '+val);
-		}else{
-			
-			$("#input1").val('');
-			//alert('Enter a valid numeric value');
-			
-			//or we can 
-			$("#errorlbl").css("color", "red");
-			$("#errorlbl").text('Enter a Valid Numeric Value');
-			
-			$("#input1").focus();
-			check = 0;
-		}
+		$('#kph').val(speed_in_knots*1.852);
 		
-		if(val1 != 0)
-		{
-			entered_values += '  Selected Currency :'+val1;
-		}else{
-			
-			$("#errorlbl1").css("color", "red");
-			$("#errorlbl1").text('Select a Value');
-			
-			$("#currency").focus();
-			check = 0;
-		}
-		
-		if(check ==1){
-			alert(entered_values);
-		}
-		*/
-		
-		//ajax calling for calculations 
-		
-		/*
-		var temp = $("#temp").val();
-		
-		
-		var To_temp = $("#degree").val();
-		//alert(To_temp);
-		
-		if(To_temp=='F'){
-			//alert("Temp in Celsius"+temp);
-			$(".content").html("<h1>Temp in Celsius</h1>:"+((temp-32)*5/9));
-			
-		}
-		else
-		{
-		
-		alert("Temp in Faren");
-		}
-		
-		*/
-		
-		
-		
-		/*
-		$.ajax({
-				type: "POST",
-				url: page,
-				data: { temprature: temp, convertto: "f" }
-				})
-				.done(function( msg ) {
-				$(".content").html(msg);
+		$('#meters_second').val(speed_in_knots*0.51444);
+			}
+			else
+			{
+			alert("Please enter a valid numeric value for speed conversion!");
+			}
 		});
-		*/
-	
-
+		
+		// For m/s conversions 
+		$("#meters_second").keyup(function() {
+			  
+		var meters_second = $("#meters_second").val();
+		if($.isNumeric(meters_second)){
+		$('#Miles').val(meters_second/0.54704);
+		
+		$('#kph').val(meters_second/0.44704);
+		
+		$('#knots').val(meters_second/0.51444);
+			}
+			else
+			{
+			alert("Please enter a valid numeric value for speed conversion!");
+			}
+		});
 });

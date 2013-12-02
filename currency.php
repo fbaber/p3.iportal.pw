@@ -20,37 +20,39 @@
     <br><br>
 	
 	<button id="button" > Convert Currency </button> -->
-	<div class="payload">
-	<h3>Easy currency converter for major currencies</h3>
+	<h2>Easy currency converter for major currencies</h2>
 	<br>
+	<div class="payload">
 	Currency Value:
     <input type='text' id='Value' required="required">
 	Convert from: 
 	<select id="Currency1" autofocus>
-	<option value="USD">USD</option>
-	<option value="EUR">EUR</option>
-	<option value="GBP">GBP</option>
-	<option value="CAD">CAD</option>
-	<option value="AUD">AUD</option>
-	<option value="JPY">JPY</option>
-	<option value="CHF">CHF</option>
-	<option value="SEK">SEK</option>
+	<option title="US Dollar $" value="USD">USD</option>
+	<option title="EU Euro €" value="EUR">EUR</option>
+	<option title="British Pound £" value="GBP">GBP</option>
+	<option title="Canadian Dollar $" value="CAD">CAD</option>
+	<option title="Australian Dollar $" value="AUD">AUD</option>
+	<option title="Japanese Yen ¥" value="JPY">JPY</option>
+	<option title="Swiss Frank S$" value="CHF">CHF</option>
+	<option title="Sweden Krona kr" value="SEK">SEK</option>
 	</select>
 	<br><br>
 	
 	<br><br>
 	Convert to:
 	<select id="Currency2" autofocus>
-	<option value="EUR">EUR</option>
-	<option value="GBP">GBP</option>
-	<option value="CAD">CAD</option>
-	<option value="AUD">AUD</option>
-	<option value="JPY">JPY</option>
-	<option value="CHF">CHF</option>
-	<option value="SEK">SEK</option>
-	<option value="USD">USD</option>
+	<option title="EU Euro €" value="EUR">EUR</option>
+	<option title="British Pound £" value="GBP">GBP</option>
+	<option title="Canadian Dollar $" value="CAD">CAD</option>
+	<option title="Australian Dollar $" value="AUD">AUD</option>
+	<option title="Japanese Yen ¥" value="JPY">JPY</option>
+	<option title="Swiss Frank S$" value="CHF">CHF</option>
+	<option title="Sweden Krona kr" value="SEK">SEK</option>
+	<option title="US Dollar $" value="USD">USD</option>
 	</select>
-	<button id="button" > Calculate </button>
+	<br><br><br>
+<!--	<button id="button" > Calculate </button> -->
+	<input type="submit" id="button" class="btn :hover" value=" Calculate with the current exchange rates ">
 	</div>
 <!--</form> -->
 

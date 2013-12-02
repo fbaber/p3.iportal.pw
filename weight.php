@@ -3,25 +3,28 @@
 
 <?php
 
-echo "<h3> Weight Conversions</h3>";
+echo "<h2> Weight Conversions</h2>";
 
 ?>
 
 <br/>
+<p><b>Please enter a numeric value below in pounds and hit the Convert button.</b></p>
+<div class="wform" style="font-size:19px; color:#339933; text-align:center;">
 <label>Enter a weight in pound:</label>
-<input type="text" id="weight_unit" required="required">
-<br/>
-<button id="button3" > Convert in other units </button>
+<input type="text" id="weight_unit" class="inputbox">
+<br/><br/>
+<button id="button3" class="btn :hover"> Convert in other weight units </button>
+</div>
 <br/>
 <!--Covert to: <input type="text" id="degree" /> -->
-<div class="wform" style="font-size:19px; color:#C60; text-align:center;">
-<input id="grams" class="wform" type="text" onkeyup="checkDec(document.getElementById('decimal').value)" style=" border:2px dashed #C60; margin: 20px 20px 20px 20px; height:36px; width: 90%; position:relative; left:-20px; background-color:transparent; color:#C60; text-align:center; font-size:30px;">
+<div class="wform" style="font-size:19px; color:#339933; text-align:center;">
+<input id="grams" class="inputbox" type="text" disabled="disabled">
 Grams
 <br>
-<input id="kilogram" class="wform" type="text" onkeyup="checkBin(document.getElementById('binary').value)" style=" border:2px dashed #C60; margin: 20px 20px 20px 20px; height:36px; width: 90%; position:relative; left:-20px; background-color:transparent; color:#C60; text-align:center; font-size:30px;">
+<input id="kilogram" class="inputbox" type="text" disabled="disabled">
 KiloGram
 <br>
-<input id="tons" class="wform" type="text" onkeyup="checkHex(document.getElementById('hexa').value)" style=" border:2px dashed #C60; margin: 20px 20px 20px 20px; height:36px; width: 90%; position:relative; left:-20px; background-color:transparent; color:#C60; text-align:center; font-size:30px;">
+<input id="tons" class="inputbox" type="text" disabled="disabled">
 Tons
 <br>
 <br>

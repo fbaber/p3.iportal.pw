@@ -5,7 +5,7 @@
 <?php
 
 //echo "Temprature conversion app";
-echo '<h3>'.' Easy Temperature conversion App'.'</h3>';
+echo '<h2>'.' Easy Temperature conversion App'.'</h2>';
 ?>
 <div class="payload">
 <br/>
@@ -21,5 +21,5 @@ echo '<h3>'.' Easy Temperature conversion App'.'</h3>';
 </select>
 <br/>
 <br/>
-<button id="button2" > Calculate </button>
+<button id="button2" class="btn :hover"> Calculate </button>
 </div>

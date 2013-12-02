@@ -8,6 +8,7 @@
 <!--[if lt IE 9]>
 	<script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
 <![endif]-->
+
 <link href="css/styles.css" rel="stylesheet" type="text/css">
 
 <!-- jquery library files -->
@@ -104,27 +105,27 @@ Your task is to build a simple tool, game, or widget— any utility that reacts 
         <h2>Google Adds</h2>
         <div class="sidebarTextBlock">
             <p>
-                Targetted Add #1
+                P3.iportal.pw Currency Exchange International aims to create a worry free currency service for all of New York's foreign currency needs with two locations in Manhattan. CXI offers exchange rates that are better than local banks and much better than the airport exchanges rates.
             </p>
-            <a href="" class="detailsLink">details...</a>
+            <a href="http://www.newyork-fx.com/" class="detailsLink" target="_blank">details...</a>
         </div>
         <div class="sidebarTextBlock">
             <p>
-                Targetted Add #2
+                There is a compendium of temperature conversion formulas and comparisons between seven different temperature scales, several of which have long been obsolete. Please click the link to find out. 
             </p>
-            <a href="" class="detailsLink">details...</a>
+            <a href="http://en.wikipedia.org/wiki/Conversion_of_units_of_temperature" class="detailsLink" target="_blank">details...</a>
         </div>
         <div class="sidebarTextBlock">
             <p>
-                Targetted Add #3
+                1,852 m is the length of the internationally-agreed nautical mile. Please click details below for a chart and formulas.
             </p>
-            <a href="" class="detailsLink">details...</a>
+            <a href="http://en.wikipedia.org/wiki/Knot_(unit)" class="detailsLink" target="_blank">details...</a>
         </div>
         <div class="sidebarTextBlock">
             <p>
-                Targetted Add #4
+                Click the details link for Weight and Mass conversion formulas. 
             </p>
-            <a href="" class="detailsLink">details...</a>
+            <a href="http://www.unit-conversion.info/weight.html" class="detailsLink" target="_blank">details...</a>
         </div>
       </div>
       

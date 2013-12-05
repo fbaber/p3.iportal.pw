@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title> Converters </title>
+<title> Easy Converters Apps</title>
 <!-- css3-mediaqueries.js for IE8 or older -->
 <!--[if lt IE 9]>
 	<script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
@@ -22,7 +22,6 @@
 <script type="text/javascript" src="js/javascript.js"> </script>
 
 </head>
-
 <body>
 
   <header class="container">
@@ -40,7 +39,7 @@
 				<span class="aclass" id="currency" >Currency</span>
 			</li>
             <li>
-				<span class="aclass" id="temprature" >Temprature</span>
+				<span class="aclass" id="temperature" >Temperature</span>
 			</li>
             <li>
 				<span class="aclass" id="weight" >Weight</span>
@@ -133,8 +132,7 @@ Your task is to build a simple tool, game, or widget— any utility that reacts 
   
   <footer class="container">
     <p>Copyright &copy; Project 3, CSCI E-15. Validation 
-            <a class="footerLink" href="http://validator.w3.org/check/referer" title="This page validates as HTML5"><abbr title="HyperText Markup Language">HTML5</abbr></a> | 
-            <a class="footerLink" href="http://jigsaw.w3.org/css-validator/check/referer" title="This page validates as CSS"><abbr title="Cascading Style Sheets">CSS3</abbr></a></p>
+            <a class="footerLink" href="http://validator.w3.org/check/referer" title="This page validates as HTML5"><abbr title="HyperText Markup Language">HTML5</abbr></a></p>
   </footer>
 </body>
 </html>

@@ -1,12 +1,13 @@
 <?php
 
 // fx.php - PHP Code to convert currencies using Yahoo's currency conversion service.
-
+// This code uses Curl functionlaity covered in class # 12 
 
 class ForeignExchange
 {
 	private $fxRate;
 	
+	// create the function that converts one source currency to the other target currency 
 	public function __construct($currencyBase, $currencyForeign)
 	{
 		$url = 'http://download.finance.yahoo.com/d/quotes.csv?s='

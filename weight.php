@@ -11,7 +11,7 @@ echo "<h2> Weight Conversions</h2>";
 <p><b>Please enter a numeric value below in pounds and hit the Convert button.</b></p>
 <div class="wform" style="font-size:19px; color:#339933; text-align:center;">
 <label>Enter a weight in pound:</label>
-<input type="text" id="weight_unit" class="inputbox">
+<input type="text" id="weight_unit" class="inputbox" maxlength="15">
 <br/><br/>
 <button id="button3" class="btn :hover"> Convert in other weight units </button>
 </div>

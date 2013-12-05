@@ -3,14 +3,6 @@
 
 if($_POST){
 	
-	// $temp = $_POST['temprature'];
-	// $convertto = $_POST['convertto'];
-	// echo $temp.'---'.$convertto;
-	
-	// $Currency1 = $_POST['currency1'];
-	// $Currency2 = $_POST['currency2'];
-	// $Value = $_POST['value'];
-	
 	// echo $Currecy1.' '.$Currency2.' '.$Value;
 	
 	$currency1 = $_POST['currency1'];
@@ -20,9 +12,9 @@ if($_POST){
 	// echo $currency1.'---'.$currency2.'--'.$value;
 	
 	
-	echo "<h1> Currency loaded </h1>";
+	echo "<h1> Currency converted per your request: </h1>";
 
-// Create an object to convert Australian Dollars to Euros.
+// Create an object to convert source currency to target currency
     require 'fx.php';
     $fx = new ForeignExchange($currency1, $currency2);
 
@@ -42,8 +34,5 @@ if($_POST){
 	echo '<p3>'.'*Note:The Exchange rates are delayed by 20 mins when markets are open.'.'</p3>';
 	
 }
-
-
-
 
 ?>

@@ -2,12 +2,13 @@
 $(function(){
 
 	
-	//css
+	// css for the menu items 
 	$("li").mouseover(function(){
 		$(this).css("background-color", "619f15");
 		$(this).css("color" , "fff");
 	});
 	
+	// Get the php files that does performs some logic and math 
 	$(".aclass").click(function (){
 		var page = $(this).attr('id');
 		page += '.php';
@@ -22,7 +23,7 @@ $(function(){
 		});
 	});
 	
-		
+	// For currency app, get the user inputs, validate them and then transfer the values to the php file for conversions. 
 	$("#button").click(
 		function (){
 		
@@ -48,91 +49,60 @@ $(function(){
 		alert("Please enter a valid numeric value for currency conversion!");
 		//die();
 		}
-		/*
-		else{
-			
-			//$("#input1").val('');
-			alert('Enter a valid numeric value');
-			
-			//or we can 
-			$("#Value").css("color", "red");
-			$("#Value").text('Enter a Valid Numeric Value');
-			
-			$("#Value").focus();
-			// check = 0;
-		}
-		*/
-		// Validation code end 
-		
-    
-		// alert(currency1 + ' ' + currency2 + ' ' + value);
-		
-		/*
-		var page = 'result.php';
-		$.ajax({
-		type: "POST",
-		url: page,
-		data: { currency1: currency1, currency2: currency2, value: value }
-		})
-		.done(function( msg ) {
-		$(".content").html(msg);
-		}); */
 		die();
+		}); 
 		
-		});
-		
-		// Temp conversion 
-		
-		
-		$("#button2").click(
+	// Temperature conversion app. Get the user input and validate it and then do the temperature conversion. 
+	$("#button2").click(
 		function (){
-		var temp = $("#temp").val();
-		
-		var To_temp = $("#degree").val();
-		//alert("You entered " + temp + " degree Fahrenheit");
-		if($.isNumeric(temp) &&  ('null' != temp))
-		{
-			if(To_temp=='F'){
-				//alert("Temp in Celsius"+temp);
-				alert("You entered " + temp + " degree Fahrenheit.");
-				$(".content").html("<h1>Temp in Celsius: "+((temp-32)*5/9).toFixed(2)+"</h1>");
-				
-			}
-			else
-			{
-				alert("You entered " + temp + " degree Celsius.");
-				$(".content").html("<h1>Temp in Fahrenheit: "+(((temp*9)/5)+32).toFixed(2)+"</h1>");
-			}
-		}
-		else
-		{
-			alert("Please enter a valid numeric value for temperature conversion!");
-		}
+			var temp = $("#temp").val();
+			var To_temp = $("#degree").val();
+			//alert("You entered " + temp + " degree Fahrenheit");
+			if($.isNumeric(temp) &&  ('null' != temp))
+				{
+					if(To_temp=='F'){
+						//alert("Temp in Celsius"+temp);
+						alert("You entered " + temp + " degree Fahrenheit.");
+						$(".content").html("<h1>Temp in Celsius: "+((temp-32)*5/9).toFixed(2)+"</h1>");
+						
+					}
+					else
+					{
+						alert("You entered " + temp + " degree Celsius.");
+						$(".content").html("<h1>Temp in Fahrenheit: "+(((temp*9)/5)+32).toFixed(2)+"</h1>");
+					}
+				}
+				else
+				{
+					alert("Please enter a valid numeric value for temperature conversion!");
+				}
 		});
-		/*
-				
-			
-		*/
-		$("#button3").click(
+
+	// Weight conversion app. Get the user input and validate it and then do the weight conversions. 
+	$("#button3").click(
 		function (){
 		var weight_unit = $("#weight_unit").val();
 		
 		// alert(weight_unit);
-		
+		if($.isNumeric(weight_unit)){
 		$('#grams').val((weight_unit/0.0022046).toFixed(2));
 		
 		$('#kilogram').val((weight_unit/2.2).toFixed(2));
 		
 		$('#tons').val(weight_unit/2204);
-		
+		}
+		else{
+		alert("Please enter a valid numeric value for weight conversion!");
+		}
 		});
-		
-		$("#Miles").keyup(function() {
+	
+	// speed metrics conversion app. Get the user input and validate it and then do the speed metrics conversion. 
+	$("#Miles").keyup(function() {
 			  //xTriggered++;
 			  
-			  var speed_in_miles = $("#Miles").val();
+		var speed_in_miles = $("#Miles").val();
 			 // alert("Hello");
-		if($.isNumeric(speed_in_miles)){
+		if($.isNumeric(speed_in_miles) || speed_in_miles.length == 0){
 		$('#kph').val(speed_in_miles*1.61);
 		
 		$('#knots').val(speed_in_miles/1.15);
@@ -145,11 +115,12 @@ $(function(){
 			}
 		});
 		
-		$("#kph").keyup(function() {
+		// For kph conversions 
+	$("#kph").keyup(function() {
 			  //xTriggered++;
 			  
 		var speed_in_kph = $("#kph").val();
-		if($.isNumeric(speed_in_kph)){
+		if($.isNumeric(speed_in_kph) || speed_in_kph.length == 0){
 		$('#Miles').val(speed_in_kph/1.61);
 		
 		$('#knots').val(speed_in_kph/3);
@@ -163,10 +134,10 @@ $(function(){
 		});
 		
 		// For Knots conversions 
-		$("#knots").keyup(function() {
+	$("#knots").keyup(function() {
 			  
 		var speed_in_knots = $("#knots").val();
-		if($.isNumeric(speed_in_knots)){
+		if($.isNumeric(speed_in_knots) || speed_in_knots.length == 0){
 		$('#Miles').val(speed_in_knots*1.151);
 		
 		$('#kph').val(speed_in_knots*1.852);
@@ -180,10 +151,10 @@ $(function(){
 		});
 		
 		// For m/s conversions 
-		$("#meters_second").keyup(function() {
+	$("#meters_second").keyup(function() {
 			  
 		var meters_second = $("#meters_second").val();
-		if($.isNumeric(meters_second)){
+		if($.isNumeric(meters_second) || meters_second.length == 0){
 		$('#Miles').val(meters_second/0.54704);
 		
 		$('#kph').val(meters_second/0.44704);

@@ -1,30 +1,10 @@
 <!-- javascript functions file -->
 <script type="text/javascript" src="js/javascript.js"> </script>
-<!--<form method='POST' class="userform"> 
-	<br>
-	<h3>Please select the currency options</h3>
-	
-    Currency1<br>
-    <input type='text' id='Currency1' required="required">
-
-    <br><br>
-	
-	Value:<br>
-    <input type='text' id='Value' required="required">
-	
-	<br><br>
-
-    Currency2<br>
-    <input type='text' id='Currency2' required="required">
-
-    <br><br>
-	
-	<button id="button" > Convert Currency </button> -->
 	<h2>Easy currency converter for major currencies</h2>
 	<br>
 	<div class="payload">
 	Currency Value:
-    <input type='text' id='Value' required="required">
+    <input type='text' id='Value' maxlength="10" size="10">
 	Convert from: 
 	<select id="Currency1" autofocus>
 	<option title="US Dollar $" value="USD">USD</option>
@@ -37,7 +17,6 @@
 	<option title="Sweden Krona kr" value="SEK">SEK</option>
 	</select>
 	<br><br>
-	
 	<br><br>
 	Convert to:
 	<select id="Currency2" autofocus>

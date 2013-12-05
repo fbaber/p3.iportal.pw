@@ -125,6 +125,22 @@ nav ul li a {
 	text-decoration: none;
 	float: left;
 }
+#currency{
+	cursor:pointer;
+	-webkit-user-select:none;
+}
+#speed{
+	cursor:pointer;
+	-webkit-user-select:none;
+}
+#weight{
+	cursor:pointer;
+	-webkit-user-select:none;
+}
+#temperature{
+	cursor:pointer;
+	-webkit-user-select:none;
+}
 .aclass{
 	padding: 20px 20px;
 	background-color: #1d1d1d;
@@ -256,37 +272,37 @@ b{
 }
 
 .btn {
-  display: inline-block;
-  padding: 4px 10px 4px;
-  margin-bottom: 0; // For input.btn
-  height : 50px;
-  font-size: @baseFontSize;
-  line-height: @baseLineHeight;
-  text-align: center;
-  text-shadow: 0 1px 1px rgba(255,255,255,.75);
-  vertical-align: middle;
-  border: 1px solid #ccc;
-  border-bottom-color: #bbb;
-  .border-radius(4px);
-  @shadow: inset 0 1px 0 rgba(255,255,255,.2), 0 1px 2px rgba(0,0,0,.05);
-  .box-shadow(@shadow);
-  cursor: pointer;
-	border-radius: 4px;
-	font-size:15px;
-  // Give IE7 some love
-  .reset-filter();
-  .ie7-restore-left-whitespace();
-  text-shadow: 0 -1px 0 rgba(0,0,0,.25);
-  color: rgba(255,255,255,.75);
-  background: blue;
+	  display: inline-block;
+	  padding: 4px 10px 4px;
+	  margin-bottom: 0; // For input.btn
+	  height : 50px;
+	  font-size: @baseFontSize;
+	  line-height: @baseLineHeight;
+	  text-align: center;
+	  text-shadow: 0 1px 1px rgba(255,255,255,.75);
+	  vertical-align: middle;
+	  border: 1px solid #ccc;
+	  border-bottom-color: #bbb;
+	  .border-radius(4px);
+	  @shadow: inset 0 1px 0 rgba(255,255,255,.2), 0 1px 2px rgba(0,0,0,.05);
+	  .box-shadow(@shadow);
+	  cursor: pointer;
+		border-radius: 4px;
+		font-size:15px;
+	  // Give IE7 some love
+	  .reset-filter();
+	  .ie7-restore-left-whitespace();
+	  text-shadow: 0 -1px 0 rgba(0,0,0,.25);
+	  color: rgba(255,255,255,.75);
+	  background: #6699FF;
 }
 .inputbox{
-background-color:transparent;
-border:1px dashed #FF3300;
-border-width:small; 
-margin: 20px 20px 20px 20px;
-height:36px; width: 90%; position:relative; left:-20px; color:#3333CC; 
-text-align:center; font-size:30px;
+	background-color:transparent;
+	border:1px dashed #FF3300;
+	border-width:small; 
+	margin: 20px 20px 20px 20px;
+	height:36px; width: 90%; position:relative; left:-20px; color:#3333CC; 
+	text-align:center; font-size:30px;
 }
 
 
